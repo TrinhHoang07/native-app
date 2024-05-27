@@ -19,7 +19,7 @@ export default function TabLayout() {
                             marginRight: 16,
                         },
                         tabBarLabelStyle: {
-                            marginBottom: -12,
+                            marginBottom: -14,
                         },
                     }}
                 >
@@ -43,13 +43,22 @@ export default function TabLayout() {
                         options={{
                             tabBarLabel: '',
                             tabBarIcon: ({ focused }) => (
-                                <IconUnion
+                                <View
                                     style={{
-                                        opacity: focused ? 1 : 0.65,
-                                        color: focused ? COLORS.light.active : COLORS.light.textBold,
+                                        backgroundColor: COLORS.light.bg_over,
+                                        paddingHorizontal: 16,
+                                        paddingVertical: 6,
+                                        borderRadius: 8,
                                     }}
-                                    name="add"
-                                />
+                                >
+                                    <IconUnion
+                                        style={{
+                                            opacity: focused ? 1 : 0.65,
+                                            color: focused ? COLORS.light.active : COLORS.light.textBold,
+                                        }}
+                                        name="add"
+                                    />
+                                </View>
                             ),
                         }}
                     />
