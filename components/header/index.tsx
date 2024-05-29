@@ -11,6 +11,7 @@ export default function Header() {
                 justifyContent: 'space-between',
                 alignItems: 'center',
                 marginHorizontal: 8,
+                paddingVertical: 8,
             }}
         >
             <Text style={{ fontSize: 24, color: COLORS.light.active, fontWeight: 'bold' }}>ht-07</Text>
